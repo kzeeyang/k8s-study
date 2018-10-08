@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: myapp-test
+  labels:
+    app: myapp-test
+spec:
+  containers:
+  - name: myapp-test
+    image: registry.cn-hangzhou.aliyuncs.com/zeeyang/app-svc:v1
+    ports:
+      - containerPort: 8080
+        protocol: TCP

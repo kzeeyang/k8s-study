@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-appconfigfiles
+data:
+  key-serverxml: |
+    <?xml version='1.0' encoding='utf-8'?>
+  key-loggingproperties: "handlers=lcatalina.org.apache.juli.FileHandler"

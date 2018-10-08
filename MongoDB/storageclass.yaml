@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata: 
+  name: gluster-mongodb
+provisioner: kubernetes.io/glusterfs
+parameters:
+  resturl: "http://180.97.171.38:8080"
+  restauthenabled: "false"

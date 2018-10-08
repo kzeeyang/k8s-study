@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-master
+spec:
+  containers:
+  - name: redis-master
+    image: redis-master:1.0
+    ports:
+    - containerPort: 6379
+    
